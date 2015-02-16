@@ -6,6 +6,8 @@ your production data by accident.
 It restricts the use of various rake tasks (including db:drop, db:reset etc...)
 when you are running your application in a production environment.
 
+![Screenshot](https://s.adamcooke.io/15/vPpaN1.png)
+
 ## Installation
 
 To install, just add to your Gemfile and run `bundle`.
