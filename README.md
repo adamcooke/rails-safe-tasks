@@ -25,9 +25,13 @@ if you wish.
 # Add another task to the list of dangerous tasks
 RailsSafeTasks.dangerous_tasks << 'another:task'
 
+# Also can add your own custom environment to the list of restricted
+# environments.
+RailsSafeTasks.restricted_environments << 'SOME_ENV'
+
 # Specify a custom rule for checking whether or not the current environment
 # should be protected or not. Return true if the current environment should
-# be protected. In this example, the presence of the 'VDT_APP' environment
+# be protected. In this example, the presence of the 'VDT_APP' environment
 # variable means we should be in a cautious state.
 RailsSafeTasks.custom_check do
   !!ENV['VDT_APP']
